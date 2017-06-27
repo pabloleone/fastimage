@@ -9,12 +9,12 @@ FastImage finds the dimensions or filetype of a remote image file given its uri 
 ```php
 <?php 
 		
-require 'Fastimage.php';
+require __DIR__.'/../vendor/autoload.php';
 		
 $uri = "http://farm9.staticflickr.com/8151/7357346052_54b8944f23_b.jpg";
 		
 // loading image into constructor
-$image = new FastImage($uri);
+$image                = new FastImage\FastImage($uri);
 list($width, $height) = $image->getSize();
 echo "dimensions: " . $width . "x" . $height;
 
