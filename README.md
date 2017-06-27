@@ -1,9 +1,11 @@
-# FastImage
+FastImage
+===
 
 FastImage finds the dimensions or filetype of a remote image file given its uri by fetching as little as needed, based on the excellent [Ruby implementation by Stephen Sykes](https://github.com/sdsykes/fastimage).
 
 
 ## Usage
+
 ```php
 <?php 
 		
@@ -23,6 +25,7 @@ $type = $image->getType();
 echo "filetype: " . $type;
 ```
 
+
 ## References
 
 * https://github.com/sdsykes/fastimage
@@ -41,3 +44,17 @@ FastImage is released under the MIT license. It is simple and easy to understand
 
 Releases are available for download from
 [GitHub](http://github.com/tommoor/fastimage/downloads).
+
+
+## Contribution
+
+Every PR must have it's tests and the code must pass PSR standards.
+
+To run tests follow these steps:
+
+ * Execute `composer install`
+ * Finally `vendor/bin/phpunit`
+
+To verify your code against PSR run `vendor/bin/php-cs-fixer fix --config=.php_cs.dist -v --using-cache=no` 
+
+*Make sure your file/folder is into the filter in the `.php_cs.dist` file.*

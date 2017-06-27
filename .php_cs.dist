@@ -1,0 +1,19 @@
+<?php
+
+$finder = PhpCsFixer\Finder::create()
+    ->in([
+        __DIR__.'/src',
+        __DIR__.'/tests',
+        __DIR__.'/examples',
+    ]);
+
+return PhpCsFixer\Config::create()
+    ->setRules([
+        '@PSR2'                  => true,
+        'array_syntax'           => ['syntax' => 'short'],
+        'binary_operator_spaces' => [
+            'align_double_arrow' => true,
+            'align_equals'       => true,
+        ],
+    ])
+    ->setFinder($finder);

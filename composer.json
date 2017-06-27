@@ -1,0 +1,30 @@
+{
+  "name": "pabloleone/fastimage",
+  "description": "FastImage finds the dimensions or filetype of a remote image file given its uri by fetching as little as needed.",
+  "version": "0.1.0",
+  "keywords": [
+    "image"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pablo Leone"
+    },
+    {
+      "name": "Tom Moor"
+    }
+  ],
+  "require": {
+    "php": ">=5.6"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~4.0",
+    "fzaninotto/faker": "^1.6",
+    "friendsofphp/php-cs-fixer": "@stable"
+  },
+  "autoload": {
+    "psr-4": {
+      "FastImage\\" : "src/"
+    }
+  }
+}
